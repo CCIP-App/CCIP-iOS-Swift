@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 let SPEAKER_KEY = "SPEAKER_KEY"
+let COMMUNITY_KEY = "COMMUNITY_KEY"
 let START_KEY = "START_KEY"
 let END_KEY = "END_KEY"
 let TYPE_KEY = "TYPE_KEY"
@@ -20,6 +21,7 @@ let SUMMARY_KEY = "SUMMARY_KEY"
 class Submission: NSCoding, Mappable {
 
     var speaker: Speaker?
+    var community: String?
     var start: Date!
     var end: Date!
     var type: String?
@@ -30,6 +32,7 @@ class Submission: NSCoding, Mappable {
     // MARK: NSCoding
     required init?(coder aDecoder: NSCoder) {
         speaker = aDecoder.decodeObject(forKey: SPEAKER_KEY) as? Speaker
+        community = aDecoder.decodeObject(forKey: COMMUNITY_KEY) as? String
         start = aDecoder.decodeObject(forKey: START_KEY) as! Date
         end = aDecoder.decodeObject(forKey: END_KEY) as! Date
         type = aDecoder.decodeObject(forKey: TYPE_KEY) as? String
@@ -40,6 +43,7 @@ class Submission: NSCoding, Mappable {
     
     func encode(with aCoder: NSCoder) {
         aCoder.encode(speaker, forKey: SPEAKER_KEY)
+        aCoder.encode(community, forKey: COMMUNITY_KEY)
         aCoder.encode(start, forKey: START_KEY)
         aCoder.encode(end, forKey: END_KEY)
         aCoder.encode(type, forKey: TYPE_KEY)
