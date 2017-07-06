@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 class Attendee: Mappable {
+    
     var token: String!
     var userId: String!
     var attr: [String : Any]?
@@ -17,9 +18,11 @@ class Attendee: Mappable {
     var scenarios: [Scenario]?
     var type: NSString!
     
+    // MARK: ObjectMapper
     required init?(map: Map) {
         
     }
+    
     func mapping(map: Map) {
         token <- map["token"]
         userId <- map["user_id"]
@@ -30,7 +33,8 @@ class Attendee: Mappable {
     }
 }
 
-class Scenario : Mappable {
+class Scenario: Mappable {
+    
     var scenarioId: String!
     var disabled: Bool!
     var countdown: Int?
@@ -41,6 +45,7 @@ class Scenario : Mappable {
     var order: Int?
     var display: DisplayText!
     
+    // MARK: ObjectMapper
     required init?(map: Map) {
         
     }
@@ -58,11 +63,12 @@ class Scenario : Mappable {
     }
 }
 
-class DisplayText : Mappable {
+class DisplayText: Mappable {
     
     var zh: String!
     var en: String?
-    
+
+    // MARK: ObjectMapper
     required init?(map: Map) {
         
     }
