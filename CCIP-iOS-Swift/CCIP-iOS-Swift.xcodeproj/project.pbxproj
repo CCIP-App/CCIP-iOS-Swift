@@ -12,6 +12,7 @@
 		2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABED1F0E242100A61437 /* Attendee.swift */; };
 		2C37ABF01F0E244300A61437 /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABEF1F0E244300A61437 /* Submission.swift */; };
 		2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABF11F0E245700A61437 /* Announcement.swift */; };
+		2C57D4491F0E977A00D29435 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57D4481F0E977A00D29435 /* CheckinViewController.swift */; };
 		2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */; };
 		2CBCA2521F0E00B300603CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2501F0E00B300603CC2 /* Main.storyboard */; };
 		2CBCA2571F0E00B300603CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2561F0E00B300603CC2 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		2C37ABED1F0E242100A61437 /* Attendee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendee.swift; path = Models/Attendee.swift; sourceTree = "<group>"; };
 		2C37ABEF1F0E244300A61437 /* Submission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Submission.swift; path = Models/Submission.swift; sourceTree = "<group>"; };
 		2C37ABF11F0E245700A61437 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Announcement.swift; path = Models/Announcement.swift; sourceTree = "<group>"; };
+		2C57D4481F0E977A00D29435 /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckinViewController.swift; path = ViewControllers/CheckinView/CheckinViewController.swift; sourceTree = "<group>"; };
 		2CBCA2491F0E00B300603CC2 /* CCIP-iOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCIP-iOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBCA2511F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,22 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		2C57D4471F0E974000D29435 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C57D44A1F0E977F00D29435 /* CheckinView */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C57D44A1F0E977F00D29435 /* CheckinView */ = {
+			isa = PBXGroup;
+			children = (
+				2C57D4481F0E977A00D29435 /* CheckinViewController.swift */,
+			);
+			name = CheckinView;
+			sourceTree = "<group>";
+		};
 		2CBCA2401F0E00B300603CC2 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +97,7 @@
 		2CBCA24B1F0E00B300603CC2 /* CCIP-iOS-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				2C57D4471F0E974000D29435 /* ViewControllers */,
 				2C37ABEC1F0E23F900A61437 /* Models */,
 				2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */,
 				2CBCA2501F0E00B300603CC2 /* Main.storyboard */,
@@ -236,6 +255,7 @@
 				2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */,
 				2C2F60C61F0E8F1E004F8C06 /* Extensions.swift in Sources */,
 				2C37ABF01F0E244300A61437 /* Submission.swift in Sources */,
+				2C57D4491F0E977A00D29435 /* CheckinViewController.swift in Sources */,
 				2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */,
 				2CE360221F0E484000315812 /* APIGateway.swift in Sources */,
 				2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */,

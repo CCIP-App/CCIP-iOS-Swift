@@ -30,7 +30,7 @@
         <!--CHECK-IN-->
         <scene sceneID="Pde-fn-T4w">
             <objects>
-                <viewController id="dKY-GP-aBl" sceneMemberID="viewController">
+                <viewController id="dKY-GP-aBl" customClass="CheckinViewController" customModule="CCIP_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aVv-Z4-M6G"/>
                         <viewControllerLayoutGuide type="bottom" id="FWh-l6-Xu0"/>
@@ -42,21 +42,14 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-kx-FQf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="Ejf-CY-EWd" kind="embed" id="Gj9-zO-XAd"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYO-E9-uzQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="t8F-Fh-lPz" kind="embed" id="93m-b1-CGv"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="CHECK-IN" id="eFZ-Qo-5fi"/>
+                    <connections>
+                        <outlet property="containerView" destination="n1L-kx-FQf" id="R3Y-q1-VxA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jv0-Ir-fw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,15 +77,15 @@
         <!--View Controller-->
         <scene sceneID="REN-LR-4nE">
             <objects>
-                <viewController id="Ejf-CY-EWd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedeemVC" id="Ejf-CY-EWd" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2n8-z5-s6N"/>
                         <viewControllerLayoutGuide type="bottom" id="KkC-1b-XaY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4aZ-XX-JYo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.38852935057035165" blue="0.1054308691098732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nap-30-p7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,15 +95,15 @@
         <!--View Controller-->
         <scene sceneID="77r-eL-zim">
             <objects>
-                <viewController id="t8F-Fh-lPz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardVC" id="t8F-Fh-lPz" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bxv-LR-yBz"/>
                         <viewControllerLayoutGuide type="bottom" id="0cC-G4-qYQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RbV-wn-LTN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.47886044831063224" green="0.98384815390473812" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNh-Vg-o3A" userLabel="First Responder" sceneMemberID="firstResponder"/>

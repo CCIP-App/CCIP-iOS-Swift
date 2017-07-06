@@ -27,6 +27,11 @@ struct Cache {
     var announcements: [Announcement]?
 }
 
+// MARK: Observers
+protocol TokenObserver {
+    func tokenHaveChange(attendee: Attendee)
+}
+
 // MARK: Responses
 class AttendeeResponse: Attendee {
     var message: String?
@@ -86,7 +91,7 @@ class APIGateway {
             KeychainWrapper.standard.set(newValue, forKey: "token")
         }
         get {
-            return KeychainWrapper.standard.string(forKey: "token")
+            return KeychainWrapper.standard.string(forKey: "token") ?? ""
         }
     }
     
