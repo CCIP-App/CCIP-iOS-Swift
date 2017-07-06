@@ -6,7 +6,7 @@ target 'CCIP-iOS-Swift' do
   use_frameworks!
 
   # Pods for CCIP-iOS-Swift
-  pod 'RestKit', '~> 0.27'
+  pod 'Alamofire', '~> 4.4'
   pod 'Firebase/DynamicLinks'
   pod 'MTBBarcodeScanner'
   pod 'Kingfisher', '~> 3.10'
