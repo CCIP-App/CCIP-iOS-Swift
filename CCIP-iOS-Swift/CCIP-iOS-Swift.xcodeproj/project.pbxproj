@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A7FB22C61E2F5505DFB5B4 /* Pods_CCIP_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */; };
 		2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */; };
 		2CBCA24F1F0E00B300603CC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA24E1F0E00B300603CC2 /* ViewController.swift */; };
 		2CBCA2521F0E00B300603CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2501F0E00B300603CC2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCIP_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBCA2491F0E00B300603CC2 /* CCIP-iOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCIP-iOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBCA24E1F0E00B300603CC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2CBCA2561F0E00B300603CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBCA2591F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBCA25B1F0E00B300603CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B35D876FAE5A7FB324A0DAF /* Pods-CCIP-iOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIP-iOS-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCIP-iOS-Swift/Pods-CCIP-iOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		71D3DF9C5D972A81436473E4 /* Pods-CCIP-iOS-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIP-iOS-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCIP-iOS-Swift/Pods-CCIP-iOS-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A7FB22C61E2F5505DFB5B4 /* Pods_CCIP_iOS_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2CBCA24B1F0E00B300603CC2 /* CCIP-iOS-Swift */,
 				2CBCA24A1F0E00B300603CC2 /* Products */,
+				A76B9EB86D58D5D88B79295A /* Pods */,
+				F2E72BEF05FFA5377AAEB447 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "CCIP-iOS-Swift";
 			sourceTree = "<group>";
 		};
+		A76B9EB86D58D5D88B79295A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71D3DF9C5D972A81436473E4 /* Pods-CCIP-iOS-Swift.debug.xcconfig */,
+				5B35D876FAE5A7FB324A0DAF /* Pods-CCIP-iOS-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2E72BEF05FFA5377AAEB447 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CBCA25E1F0E00B300603CC2 /* Build configuration list for PBXNativeTarget "CCIP-iOS-Swift" */;
 			buildPhases = (
+				C857DAE3015C02B1582FEFE0 /* [CP] Check Pods Manifest.lock */,
 				2CBCA2451F0E00B300603CC2 /* Sources */,
 				2CBCA2461F0E00B300603CC2 /* Frameworks */,
 				2CBCA2471F0E00B300603CC2 /* Resources */,
+				707FDA581BC9FAB3A2C76FA7 /* [CP] Embed Pods Frameworks */,
+				76B1F3568DFB2E398BB38FDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		707FDA581BC9FAB3A2C76FA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCIP-iOS-Swift/Pods-CCIP-iOS-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76B1F3568DFB2E398BB38FDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCIP-iOS-Swift/Pods-CCIP-iOS-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C857DAE3015C02B1582FEFE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CBCA2451F0E00B300603CC2 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		2CBCA25F1F0E00B300603CC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D3DF9C5D972A81436473E4 /* Pods-CCIP-iOS-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P6MT39G78P;
@@ -277,6 +353,7 @@
 		};
 		2CBCA2601F0E00B300603CC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B35D876FAE5A7FB324A0DAF /* Pods-CCIP-iOS-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P6MT39G78P;
