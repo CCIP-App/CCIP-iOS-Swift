@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		26A7FB22C61E2F5505DFB5B4 /* Pods_CCIP_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */; };
+		2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABED1F0E242100A61437 /* Attendee.swift */; };
+		2C37ABF01F0E244300A61437 /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABEF1F0E244300A61437 /* Submission.swift */; };
+		2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABF11F0E245700A61437 /* Announcement.swift */; };
 		2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */; };
 		2CBCA2521F0E00B300603CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2501F0E00B300603CC2 /* Main.storyboard */; };
 		2CBCA2571F0E00B300603CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2561F0E00B300603CC2 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 
 /* Begin PBXFileReference section */
 		0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCIP_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C37ABED1F0E242100A61437 /* Attendee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendee.swift; path = Models/Attendee.swift; sourceTree = "<group>"; };
+		2C37ABEF1F0E244300A61437 /* Submission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Submission.swift; path = Models/Submission.swift; sourceTree = "<group>"; };
+		2C37ABF11F0E245700A61437 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Announcement.swift; path = Models/Announcement.swift; sourceTree = "<group>"; };
 		2CBCA2491F0E00B300603CC2 /* CCIP-iOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCIP-iOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBCA2511F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C37ABEC1F0E23F900A61437 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C37ABED1F0E242100A61437 /* Attendee.swift */,
+				2C37ABEF1F0E244300A61437 /* Submission.swift */,
+				2C37ABF11F0E245700A61437 /* Announcement.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		2CBCA2401F0E00B300603CC2 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +75,7 @@
 		2CBCA24B1F0E00B300603CC2 /* CCIP-iOS-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				2C37ABEC1F0E23F900A61437 /* Models */,
 				2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */,
 				2CBCA2501F0E00B300603CC2 /* Main.storyboard */,
 				2CBCA2561F0E00B300603CC2 /* Assets.xcassets */,
@@ -121,6 +138,7 @@
 					2CBCA2481F0E00B300603CC2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = P6MT39G78P;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -209,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */,
+				2C37ABF01F0E244300A61437 /* Submission.swift in Sources */,
 				2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */,
+				2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +309,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -336,6 +358,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
