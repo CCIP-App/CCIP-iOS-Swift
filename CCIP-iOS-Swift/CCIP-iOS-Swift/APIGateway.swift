@@ -29,7 +29,7 @@ struct Cache {
 
 // MARK: Observers
 protocol TokenObserver {
-    func tokenHaveChange(attendee: Attendee)
+    func tokenHaveChange(attendee: Attendee?)
 }
 
 // MARK: Responses
@@ -111,5 +111,18 @@ class APIGateway {
         self.cache.attendee = nil;
         accessToken = ""
         OneSignal.sendTags(["token":""])
+    }
+    
+    // MARK: Token Observer
+    private var tokenObservers: [TokenObserver] = []
+    
+    func addTokenObserver(observer: TokenObserver) {
+        tokenObservers.append(observer)
+    }
+    
+    private func notifyTokenObserver() {
+        for observer in tokenObservers {
+            observer.tokenHaveChange(attendee: cache.attendee)
+        }
     }
 }

@@ -17,6 +17,7 @@ class CheckinViewController: UIViewController, TokenObserver {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        APIGateway.sharedInstance().addTokenObserver(observer: self)
         redeemVC = (self.storyboard?.instantiateViewController(withIdentifier: "RedeemVC"))!
         cardVC = (self.storyboard?.instantiateViewController(withIdentifier: "CardVC"))!
     }
@@ -57,7 +58,7 @@ class CheckinViewController: UIViewController, TokenObserver {
                                                                                  options: [], metrics: nil, views: viewBindingsDict))
     }
     
-    func tokenHaveChange(attendee: Attendee) {
+    func tokenHaveChange(attendee: Attendee?) {
         presentContent(animate: true)
     }
     
