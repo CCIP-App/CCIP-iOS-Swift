@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import ObjectMapper
 @available(iOS 10.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let test: Attendee = Mapper<Attendee>().map(JSONString: "{\"token\": \"test\",\"user_id\": \"YC\",\"attr\": {},\"status\": 0,\"scenarios\": [{\"scenario_id\": \"t\",\"disabled\": false,\"display\": {\"zh\": \"test\"}}]}")!
+        
+        print(test.userId, test.scenarios?.last?.display.zh)
         // Override point for customization after application launch.
         return true
     }
