@@ -17,7 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        APIGateway.sharedInstance().requestAttendee(token: "", success: { (_) in
+            
+        }, failure: { (error: ErrorMessage) in
+            print(error.message)
+        })
         // Override point for customization after application launch.
         return true
     }

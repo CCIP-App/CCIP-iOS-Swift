@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.5.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
   - Firebase/Core (4.0.3):
     - FirebaseAnalytics (= 4.0.2)
     - FirebaseCore (= 4.0.3)
@@ -27,6 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - AlamofireObjectMapper (~> 4.0)
   - Firebase/DynamicLinks
   - GoogleAnalytics
   - Kingfisher (~> 3.10)
@@ -36,6 +40,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
   FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
   FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
@@ -48,6 +53,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   OneSignal: da994bcf6a2efbdceaf71e389e1d05245c562899
 
-PODFILE CHECKSUM: 897f4fd2967f2f730cf551994f2141211155ad68
+PODFILE CHECKSUM: c720db404954978cbc559ede1560c6e09f8ec1e6
 
 COCOAPODS: 1.2.1

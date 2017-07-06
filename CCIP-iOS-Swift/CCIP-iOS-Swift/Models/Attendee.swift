@@ -11,12 +11,12 @@ import ObjectMapper
 
 class Attendee: Mappable {
     
-    var token: String!
-    var userId: String!
+    var token: String?
+    var userId: String?
     var attr: [String : Any]?
-    var status: Int!
+    var status: Int?
     var scenarios: [Scenario]?
-    var type: NSString!
+    var type: NSString?
     
     // MARK: ObjectMapper
     required init?(map: Map) {
@@ -35,15 +35,15 @@ class Attendee: Mappable {
 
 class Scenario: Mappable {
     
-    var scenarioId: String!
-    var disabled: Bool!
+    var scenarioId: String?
+    var disabled: Bool?
     var countdown: Int?
     var used: Date?
     var expireTime: Date?
     var availableTime: Date?
     var attr: [String: Any]?
     var order: Int?
-    var display: DisplayText!
+    var display: DisplayText?
     
     // MARK: ObjectMapper
     required init?(map: Map) {
@@ -65,7 +65,7 @@ class Scenario: Mappable {
 
 class DisplayText: Mappable {
     
-    var zh: String!
+    var zh: String?
     var en: String?
 
     // MARK: ObjectMapper

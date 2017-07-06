@@ -15,6 +15,7 @@
 		2CBCA2521F0E00B300603CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2501F0E00B300603CC2 /* Main.storyboard */; };
 		2CBCA2571F0E00B300603CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2561F0E00B300603CC2 /* Assets.xcassets */; };
 		2CBCA25A1F0E00B300603CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2581F0E00B300603CC2 /* LaunchScreen.storyboard */; };
+		2CE360221F0E484000315812 /* APIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE360211F0E484000315812 /* APIGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2CBCA2561F0E00B300603CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBCA2591F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBCA25B1F0E00B300603CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE360211F0E484000315812 /* APIGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIGateway.swift; sourceTree = "<group>"; };
 		5B35D876FAE5A7FB324A0DAF /* Pods-CCIP-iOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIP-iOS-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCIP-iOS-Swift/Pods-CCIP-iOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		71D3DF9C5D972A81436473E4 /* Pods-CCIP-iOS-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIP-iOS-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCIP-iOS-Swift/Pods-CCIP-iOS-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				2CBCA2561F0E00B300603CC2 /* Assets.xcassets */,
 				2CBCA2581F0E00B300603CC2 /* LaunchScreen.storyboard */,
 				2CBCA25B1F0E00B300603CC2 /* Info.plist */,
+				2CE360211F0E484000315812 /* APIGateway.swift */,
 			);
 			path = "CCIP-iOS-Swift";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */,
 				2C37ABF01F0E244300A61437 /* Submission.swift in Sources */,
 				2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */,
+				2CE360221F0E484000315812 /* APIGateway.swift in Sources */,
 				2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
