@@ -10,11 +10,11 @@ import Foundation
 import ObjectMapper
 import Alamofire
 import AlamofireObjectMapper
+import SwiftKeychainWrapper
+import OneSignal
 
 let BASE_URL = "https://ccip.coscup.org/"
 let ATTENDEE_STATUS = "status"
-/*
-- (void)requestAttendeeStatusWithToken:(NSString* _Nonnull)token Completion:(void (^ _Nullable)(Attendee* _Nonnull attendee))completion Failure:(void (^ _Nullable)(ErrorMessage* _Nonnull message))failure;*/
 
 struct ErrorMessage {
     var title: String!
@@ -58,7 +58,7 @@ class APIGateway {
             switch response.result {
             case .success:
                 if((response.value?.message) != nil) {
-                    return failure!(ErrorMessage(title: "", message: response.value?.message))
+                    return failure!(ErrorMessage(title: "token_error".localized, message: response.value?.message))
                 } else {
                     self.cache.attendee = response.value
                     return success(response.value!)
@@ -80,4 +80,31 @@ class APIGateway {
         requestAttendee(token: token, success: success, failure: failure)
     }
     
+    // MARK: Token
+    var accessToken: String! {
+        set {
+            KeychainWrapper.standard.set(newValue, forKey: "token")
+        }
+        get {
+            return KeychainWrapper.standard.string(forKey: "token")
+        }
+    }
+    
+    var haveAccessToken: Bool {
+        return accessToken.characters.count > 0 ? true : false
+    }
+    
+    func setAccessToken(token: String!, success: @escaping (Attendee) -> Void, failure: ((ErrorMessage) -> Void)?) {
+        accessToken = token
+        requestAttendee(token: token, success: { (attendee: Attendee) in
+            OneSignal.sendTags(["Token": self.accessToken, "type": attendee.type!])
+            return success(attendee)
+        }, failure: failure)
+    }
+    
+    func resetAccessToken() {
+        self.cache.attendee = nil;
+        accessToken = ""
+        OneSignal.sendTags(["token":""])
+    }
 }

@@ -17,12 +17,10 @@ class Announcement: Mappable {
     var uri: String?
     
     var msg: String {
-        get {
             if (NSLocale.current.identifier == "zh") {
                 return msgZh!
             }
             return msgEn!
-        }
     }
     
     // MARK: ObjectMapper

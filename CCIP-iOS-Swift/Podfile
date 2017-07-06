@@ -14,5 +14,6 @@ target 'CCIP-iOS-Swift' do
   pod 'GoogleAnalytics'
   pod 'ObjectMapper', '~> 2.2'
   pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'SwiftKeychainWrapper'
 
 end

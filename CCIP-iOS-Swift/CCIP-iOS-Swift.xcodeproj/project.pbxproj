@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26A7FB22C61E2F5505DFB5B4 /* Pods_CCIP_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */; };
+		2C2F60C61F0E8F1E004F8C06 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F60C51F0E8F1E004F8C06 /* Extensions.swift */; };
 		2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABED1F0E242100A61437 /* Attendee.swift */; };
 		2C37ABF01F0E244300A61437 /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABEF1F0E244300A61437 /* Submission.swift */; };
 		2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABF11F0E245700A61437 /* Announcement.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCIP_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2F60C51F0E8F1E004F8C06 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2C37ABED1F0E242100A61437 /* Attendee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendee.swift; path = Models/Attendee.swift; sourceTree = "<group>"; };
 		2C37ABEF1F0E244300A61437 /* Submission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Submission.swift; path = Models/Submission.swift; sourceTree = "<group>"; };
 		2C37ABF11F0E245700A61437 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Announcement.swift; path = Models/Announcement.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				2CBCA2581F0E00B300603CC2 /* LaunchScreen.storyboard */,
 				2CBCA25B1F0E00B300603CC2 /* Info.plist */,
 				2CE360211F0E484000315812 /* APIGateway.swift */,
+				2C2F60C51F0E8F1E004F8C06 /* Extensions.swift */,
 			);
 			path = "CCIP-iOS-Swift";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */,
+				2C2F60C61F0E8F1E004F8C06 /* Extensions.swift in Sources */,
 				2C37ABF01F0E244300A61437 /* Submission.swift in Sources */,
 				2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */,
 				2CE360221F0E484000315812 /* APIGateway.swift in Sources */,
