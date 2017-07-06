@@ -12,5 +12,6 @@ target 'CCIP-iOS-Swift' do
   pod 'Kingfisher', '~> 3.10'
   pod 'OneSignal'
   pod 'GoogleAnalytics'
+  pod 'ObjectMapper', '~> 2.2'
 
 end
