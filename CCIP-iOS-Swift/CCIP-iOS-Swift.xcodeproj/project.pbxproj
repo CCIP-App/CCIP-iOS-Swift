@@ -8,21 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		26A7FB22C61E2F5505DFB5B4 /* Pods_CCIP_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */; };
-		2C37ABCA1F0E1A2D00A61437 /* CoreDataConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABC91F0E1A2D00A61437 /* CoreDataConnector.swift */; };
 		2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */; };
 		2CBCA2521F0E00B300603CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2501F0E00B300603CC2 /* Main.storyboard */; };
-		2CBCA2551F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA2531F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodeld */; };
 		2CBCA2571F0E00B300603CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2561F0E00B300603CC2 /* Assets.xcassets */; };
 		2CBCA25A1F0E00B300603CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2581F0E00B300603CC2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCIP_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C37ABC91F0E1A2D00A61437 /* CoreDataConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataConnector.swift; sourceTree = "<group>"; };
 		2CBCA2491F0E00B300603CC2 /* CCIP-iOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCIP-iOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBCA2511F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2CBCA2541F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CCIP_iOS_Swift.xcdatamodel; sourceTree = "<group>"; };
 		2CBCA2561F0E00B300603CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBCA2591F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBCA25B1F0E00B300603CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,8 +64,6 @@
 				2CBCA2561F0E00B300603CC2 /* Assets.xcassets */,
 				2CBCA2581F0E00B300603CC2 /* LaunchScreen.storyboard */,
 				2CBCA25B1F0E00B300603CC2 /* Info.plist */,
-				2CBCA2531F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodeld */,
-				2C37ABC91F0E1A2D00A61437 /* CoreDataConnector.swift */,
 			);
 			path = "CCIP-iOS-Swift";
 			sourceTree = "<group>";
@@ -215,9 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBCA2551F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodeld in Sources */,
 				2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */,
-				2C37ABCA1F0E1A2D00A61437 /* CoreDataConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,19 +392,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2CBCA2531F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2CBCA2541F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodel */,
-			);
-			currentVersion = 2CBCA2541F0E00B300603CC2 /* CCIP_iOS_Swift.xcdatamodel */;
-			path = CCIP_iOS_Swift.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2CBCA2411F0E00B300603CC2 /* Project object */;
 }
