@@ -35,6 +35,12 @@ class CheckinViewController: UIViewController, TokenObserver {
         } else {
             vc = cardVC
         }
+        if(childViewControllers.index(of: vc!) != nil) {
+            return
+        } else {
+            self.childViewControllers.first?.view.removeFromSuperview()
+            self.childViewControllers.first?.removeFromParentViewController()
+        }
         
         if(animate) {
             vc?.view.alpha = 0.0
@@ -43,19 +49,8 @@ class CheckinViewController: UIViewController, TokenObserver {
             })
         }
         
-        addSubview(subView: (vc?.view)!, toView: containerView)
+        self.containerView.addSubview(vc!.view)
         addChildViewController(vc!)
-    }
-    
-    func addSubview(subView:UIView, toView parentView:UIView) {
-        parentView.addSubview(subView)
-        
-        var viewBindingsDict = [String: AnyObject]()
-        viewBindingsDict["subView"] = subView
-        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[subView]|",
-                                                                                 options: [], metrics: nil, views: viewBindingsDict))
-        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[subView]|",
-                                                                                 options: [], metrics: nil, views: viewBindingsDict))
     }
     
     func tokenHaveChange(attendee: Attendee?) {

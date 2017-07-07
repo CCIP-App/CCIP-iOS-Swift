@@ -13,6 +13,7 @@ import AlamofireObjectMapper
 import SwiftKeychainWrapper
 import OneSignal
 
+// TODO: Move This Const to Setting File
 let BASE_URL = "https://ccip.coscup.org/"
 let ATTENDEE_STATUS = "status"
 
@@ -57,6 +58,7 @@ class APIGateway {
     // MARK: Attendee
     func requestAttendee(token: String!, success: @escaping (Attendee) -> Void, failure: ((ErrorMessage) -> Void)?) {
         let parameters: Parameters = ["token": token]
+        
         Alamofire.request(BASE_URL + ATTENDEE_STATUS, parameters:parameters).responseObject {
             (response: DataResponse<AttendeeResponse>) in
             
@@ -86,7 +88,7 @@ class APIGateway {
     }
     
     // MARK: Token
-    var accessToken: String! {
+    private(set) var accessToken: String! {
         set {
             KeychainWrapper.standard.set(newValue, forKey: "token")
         }
@@ -103,14 +105,17 @@ class APIGateway {
         accessToken = token
         requestAttendee(token: token, success: { (attendee: Attendee) in
             OneSignal.sendTags(["Token": self.accessToken, "type": attendee.type!])
+            self.notifyTokenObserver()
             return success(attendee)
         }, failure: failure)
+        
     }
     
     func resetAccessToken() {
         self.cache.attendee = nil;
         accessToken = ""
         OneSignal.sendTags(["token":""])
+        self.notifyTokenObserver()
     }
     
     // MARK: Token Observer

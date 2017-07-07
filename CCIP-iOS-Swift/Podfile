@@ -8,7 +8,7 @@ target 'CCIP-iOS-Swift' do
   # Pods for CCIP-iOS-Swift
   pod 'Alamofire', '~> 4.4'
   pod 'Firebase/DynamicLinks'
-  pod 'MTBBarcodeScanner'
+  pod 'RSBarcodes_Swift', '~> 3.0.3'
   pod 'Kingfisher', '~> 3.10'
   pod 'OneSignal'
   pod 'GoogleAnalytics'

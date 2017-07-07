@@ -8,6 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--TELEGRAM-->
+        <scene sceneID="zyd-2n-QhH">
+            <objects>
+                <viewController storyboardIdentifier="Telegram" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zd5-kX-2Zi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5JA-SH-ZxE"/>
+                        <viewControllerLayoutGuide type="bottom" id="BW0-dR-UMj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XXi-Bd-CFr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TELEGRAM" id="FjE-ae-UdJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxD-7T-fvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1063" y="800"/>
+        </scene>
         <!--SCHEDULE-->
         <scene sceneID="58f-Vq-XmZ">
             <objects>
@@ -39,12 +58,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-kx-FQf">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-kx-FQf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FWh-l6-Xu0" firstAttribute="top" secondItem="n1L-kx-FQf" secondAttribute="bottom" id="Ixe-o5-sO0"/>
+                            <constraint firstItem="n1L-kx-FQf" firstAttribute="top" secondItem="Si0-0D-ODE" secondAttribute="top" id="M2I-aj-yrT"/>
+                            <constraint firstItem="n1L-kx-FQf" firstAttribute="leading" secondItem="Si0-0D-ODE" secondAttribute="leading" id="MRP-za-bHu"/>
+                            <constraint firstAttribute="trailing" secondItem="n1L-kx-FQf" secondAttribute="trailing" id="kYA-Kc-pju"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="CHECK-IN" id="eFZ-Qo-5fi"/>
                     <connections>
@@ -55,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="-111.2" y="-606.74662668665667"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="Zoy-fd-ezf">
             <objects>
-                <tabBarController id="Pzf-xd-O9S" sceneMemberID="viewController">
+                <tabBarController id="Pzf-xd-O9S" customClass="TabbarController" customModule="CCIP_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="o2y-cr-xQX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -68,16 +92,17 @@
                     <connections>
                         <segue destination="dKY-GP-aBl" kind="relationship" relationship="viewControllers" id="CF8-LZ-jQp"/>
                         <segue destination="Lbe-KN-HuK" kind="relationship" relationship="viewControllers" id="EpY-no-Wrh"/>
+                        <segue destination="zd5-kX-2Zi" kind="relationship" relationship="viewControllers" id="e0z-iH-PFo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6c-Ti-New" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1063" y="-267"/>
         </scene>
-        <!--View Controller-->
+        <!--Redeem View Controller-->
         <scene sceneID="REN-LR-4nE">
             <objects>
-                <viewController storyboardIdentifier="RedeemVC" id="Ejf-CY-EWd" sceneMemberID="viewController">
+                <viewController id="Ejf-CY-EWd" customClass="RedeemViewController" customModule="CCIP_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2n8-z5-s6N"/>
                         <viewControllerLayoutGuide type="bottom" id="KkC-1b-XaY"/>
@@ -85,12 +110,23 @@
                     <view key="view" contentMode="scaleToFill" id="4aZ-XX-JYo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.38852935057035165" blue="0.1054308691098732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="c7I-Sd-cwY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c7I-Sd-cwY" secondAttribute="trailing" id="4TB-ez-95X"/>
+                            <constraint firstItem="c7I-Sd-cwY" firstAttribute="leading" secondItem="4aZ-XX-JYo" secondAttribute="leading" id="c9u-Vt-BZy"/>
+                            <constraint firstItem="KkC-1b-XaY" firstAttribute="top" secondItem="c7I-Sd-cwY" secondAttribute="bottom" id="lfS-e9-sxq"/>
+                            <constraint firstItem="c7I-Sd-cwY" firstAttribute="top" secondItem="4aZ-XX-JYo" secondAttribute="top" id="vhb-vB-lkA"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aro-P3-ERx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nap-30-p7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="-844"/>
+            <point key="canvasLocation" x="2063.1999999999998" y="-945.87706146926541"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="77r-eL-zim">
@@ -108,7 +144,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNh-Vg-o3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="-237"/>
+            <point key="canvasLocation" x="977" y="-278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mhc-he-0HP">
+            <objects>
+                <navigationController storyboardIdentifier="RedeemVC" automaticallyAdjustsScrollViewInsets="NO" id="JER-Kw-Vp1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AdA-AO-Vmh" customClass="LogoNavigationBar" customModule="CCIP_iOS_Swift" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ejf-CY-EWd" kind="relationship" relationship="rootViewController" id="b80-uB-TQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMJ-T6-rSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="-946"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GradientBackground" width="375" height="667"/>
+    </resources>
 </document>

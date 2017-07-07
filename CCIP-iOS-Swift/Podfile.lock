@@ -24,9 +24,9 @@ PODS:
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - Kingfisher (3.10.3)
-  - MTBBarcodeScanner (5.0.1)
   - ObjectMapper (2.2.7)
   - OneSignal (2.5.4)
+  - RSBarcodes_Swift (3.0.3)
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
@@ -35,9 +35,9 @@ DEPENDENCIES:
   - Firebase/DynamicLinks
   - GoogleAnalytics
   - Kingfisher (~> 3.10)
-  - MTBBarcodeScanner
   - ObjectMapper (~> 2.2)
   - OneSignal
+  - RSBarcodes_Swift (~> 3.0.3)
   - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
@@ -51,11 +51,11 @@ SPEC CHECKSUMS:
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
-  MTBBarcodeScanner: 66c75f40cbac5986c97634a0775bfe7f92243e7c
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   OneSignal: da994bcf6a2efbdceaf71e389e1d05245c562899
+  RSBarcodes_Swift: 3b4a9c2e81fe9f435a26f18a1b8b826665e7cf89
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: a58f33dc3899dfd151f4ae1afebe179fa4aa3198
+PODFILE CHECKSUM: 82fb34e862812c7108eb3605b69a310474a314c0
 
 COCOAPODS: 1.2.1
