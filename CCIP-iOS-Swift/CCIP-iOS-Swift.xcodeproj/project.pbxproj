@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		26A7FB22C61E2F5505DFB5B4 /* Pods_CCIP_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */; };
-		2C202C9B1F0F897D00E449DA /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C202C9A1F0F897D00E449DA /* RedeemViewController.swift */; };
 		2C202CA01F0F8DFD00E449DA /* LogoNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C202C9F1F0F8DFD00E449DA /* LogoNavigationBar.swift */; };
 		2C2F60C61F0E8F1E004F8C06 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F60C51F0E8F1E004F8C06 /* Extensions.swift */; };
 		2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABED1F0E242100A61437 /* Attendee.swift */; };
 		2C37ABF01F0E244300A61437 /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABEF1F0E244300A61437 /* Submission.swift */; };
 		2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37ABF11F0E245700A61437 /* Announcement.swift */; };
 		2C49CF7D1F0FA0AC00D389DE /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C49CF7C1F0FA0AC00D389DE /* TabbarController.swift */; };
-		2C57D4491F0E977A00D29435 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57D4481F0E977A00D29435 /* CheckinViewController.swift */; };
+		2C4DF01E1F0FE60E000950F3 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DF01D1F0FE60E000950F3 /* ScheduleViewController.swift */; };
+		2C5F71871F0FA88100CE57A2 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F71851F0FA88100CE57A2 /* CheckinViewController.swift */; };
+		2C5F71881F0FA88100CE57A2 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5F71861F0FA88100CE57A2 /* RedeemViewController.swift */; };
 		2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */; };
 		2CBCA2521F0E00B300603CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2501F0E00B300603CC2 /* Main.storyboard */; };
 		2CBCA2571F0E00B300603CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBCA2561F0E00B300603CC2 /* Assets.xcassets */; };
@@ -25,14 +26,15 @@
 
 /* Begin PBXFileReference section */
 		0F04D0631A96D48FDAEDF1A9 /* Pods_CCIP_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCIP_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C202C9A1F0F897D00E449DA /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedeemViewController.swift; path = ViewControllers/CheckinView/RedeemViewController.swift; sourceTree = "<group>"; };
 		2C202C9F1F0F8DFD00E449DA /* LogoNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoNavigationBar.swift; sourceTree = "<group>"; };
 		2C2F60C51F0E8F1E004F8C06 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2C37ABED1F0E242100A61437 /* Attendee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendee.swift; path = Models/Attendee.swift; sourceTree = "<group>"; };
 		2C37ABEF1F0E244300A61437 /* Submission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Submission.swift; path = Models/Submission.swift; sourceTree = "<group>"; };
 		2C37ABF11F0E245700A61437 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Announcement.swift; path = Models/Announcement.swift; sourceTree = "<group>"; };
 		2C49CF7C1F0FA0AC00D389DE /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabbarController.swift; path = ViewControllers/TabbarController.swift; sourceTree = "<group>"; };
-		2C57D4481F0E977A00D29435 /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckinViewController.swift; path = ViewControllers/CheckinView/CheckinViewController.swift; sourceTree = "<group>"; };
+		2C4DF01D1F0FE60E000950F3 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleViewController.swift; path = ViewControllers/Schedule/ScheduleViewController.swift; sourceTree = "<group>"; };
+		2C5F71851F0FA88100CE57A2 /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckinViewController.swift; path = ViewControllers/Checkin/CheckinViewController.swift; sourceTree = "<group>"; };
+		2C5F71861F0FA88100CE57A2 /* RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedeemViewController.swift; path = ViewControllers/Checkin/RedeemViewController.swift; sourceTree = "<group>"; };
 		2CBCA2491F0E00B300603CC2 /* CCIP-iOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCIP-iOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBCA24C1F0E00B300603CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBCA2511F0E00B300603CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,19 +79,28 @@
 		2C57D4471F0E974000D29435 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2C57D44A1F0E977F00D29435 /* CheckinView */,
+				2C5F71841F0FA82C00CE57A2 /* Schedule */,
+				2C57D44A1F0E977F00D29435 /* Checkin */,
 				2C49CF7C1F0FA0AC00D389DE /* TabbarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		2C57D44A1F0E977F00D29435 /* CheckinView */ = {
+		2C57D44A1F0E977F00D29435 /* Checkin */ = {
 			isa = PBXGroup;
 			children = (
-				2C57D4481F0E977A00D29435 /* CheckinViewController.swift */,
-				2C202C9A1F0F897D00E449DA /* RedeemViewController.swift */,
+				2C5F71851F0FA88100CE57A2 /* CheckinViewController.swift */,
+				2C5F71861F0FA88100CE57A2 /* RedeemViewController.swift */,
 			);
-			name = CheckinView;
+			name = Checkin;
+			sourceTree = "<group>";
+		};
+		2C5F71841F0FA82C00CE57A2 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				2C4DF01D1F0FE60E000950F3 /* ScheduleViewController.swift */,
+			);
+			name = Schedule;
 			sourceTree = "<group>";
 		};
 		2CBCA2401F0E00B300603CC2 = {
@@ -269,15 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5F71881F0FA88100CE57A2 /* RedeemViewController.swift in Sources */,
 				2C37ABF21F0E245700A61437 /* Announcement.swift in Sources */,
 				2C2F60C61F0E8F1E004F8C06 /* Extensions.swift in Sources */,
 				2C37ABF01F0E244300A61437 /* Submission.swift in Sources */,
-				2C57D4491F0E977A00D29435 /* CheckinViewController.swift in Sources */,
 				2CBCA24D1F0E00B300603CC2 /* AppDelegate.swift in Sources */,
+				2C5F71871F0FA88100CE57A2 /* CheckinViewController.swift in Sources */,
 				2CE360221F0E484000315812 /* APIGateway.swift in Sources */,
-				2C202C9B1F0F897D00E449DA /* RedeemViewController.swift in Sources */,
 				2C202CA01F0F8DFD00E449DA /* LogoNavigationBar.swift in Sources */,
 				2C49CF7D1F0FA0AC00D389DE /* TabbarController.swift in Sources */,
+				2C4DF01E1F0FE60E000950F3 /* ScheduleViewController.swift in Sources */,
 				2C37ABEE1F0E242100A61437 /* Attendee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
