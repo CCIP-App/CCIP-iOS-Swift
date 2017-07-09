@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }, failure: { (error: ErrorMessage) in
             print(error.message)
         })
+        APIGateway.sharedInstance().getSubmissions(success: { (_) in
+            
+        }, failure: nil)
         // Override point for customization after application launch.
         return true
     }

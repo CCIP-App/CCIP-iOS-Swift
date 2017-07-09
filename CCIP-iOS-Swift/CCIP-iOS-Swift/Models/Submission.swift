@@ -18,7 +18,7 @@ let ROOM_KEY = "ROOM_KEY"
 let SUBJECT_KEY = "SUBJECT_KEY"
 let SUMMARY_KEY = "SUMMARY_KEY"
 
-class Submission: NSCoding, Mappable {
+class Submission: NSObject, NSCoding, Mappable {
 
     var speaker: Speaker?
     var community: String?
@@ -59,8 +59,9 @@ class Submission: NSCoding, Mappable {
     
     func mapping(map: Map) {
         speaker <- map["speaker"]
-        start <- (map["start"], DateTransform())
-        end <- (map["end"], DateTransform())
+        start <- (map["start"], ISO8601DateTransform())
+        end <- (map["end"], ISO8601DateTransform())
+        community <- map["community"]
         type <- map["type"]
         room <- map["room"]
         subject <- map["subject"]
@@ -72,7 +73,7 @@ let NAME_KEY = "NAME_KEY"
 let AVATAR_KEY = "AVATAR_KEY"
 let BIO_KEY = "BIO_KEY"
 
-class Speaker: NSCoding, Mappable {
+class Speaker: NSObject, NSCoding, Mappable {
     
     var name: String!
     var avatar: String?
