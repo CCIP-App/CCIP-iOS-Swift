@@ -138,4 +138,8 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         cell.durationLabel.text = String(format: "%d", Int((cell.submission?.end.timeIntervalSince((cell.submission?.start)!))!/60))
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ShowDetailSegue", sender: self)
+    }
 }

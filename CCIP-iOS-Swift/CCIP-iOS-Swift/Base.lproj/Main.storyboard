@@ -176,7 +176,7 @@
                                                             <outlet property="timeLabel" destination="h8l-qL-38X" id="kKp-5f-u1r"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScheduleSubmissionCell" rowHeight="80" id="Z6f-Sc-RnD" customClass="SubmissionCell" customModule="CCIP_iOS_Swift" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleSubmissionCell" rowHeight="80" id="Z6f-Sc-RnD" customClass="SubmissionCell" customModule="CCIP_iOS_Swift" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="68" width="375" height="80"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z6f-Sc-RnD" id="b1j-4H-d7X">
@@ -594,11 +594,30 @@
                         <outlet property="dayTwoIndicatorConstraint" destination="TMV-pv-Stw" id="DNb-WG-ipV"/>
                         <outlet property="dayTwoTable" destination="KHr-2C-Krg" id="rB0-RO-hbR"/>
                         <outlet property="scrollView" destination="6RY-tH-Zqv" id="YCc-aK-pAT"/>
+                        <segue destination="UPX-gY-nNH" kind="show" identifier="ShowDetailSegue" id="chP-qG-TSA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uV9-9S-30n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-111.2" y="239.73013493253376"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DQw-aS-xfk">
+            <objects>
+                <viewController id="UPX-gY-nNH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kXh-Z1-g62"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ge-eu-YDk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hTp-yq-mws">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsz-zS-IsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="959"/>
         </scene>
         <!--CHECK-IN-->
         <scene sceneID="Pde-fn-T4w">
